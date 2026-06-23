@@ -1,12 +1,34 @@
-import chromadb
-from chromadb.config import Settings
+"""ChromaDB helper utilities.
+
+Make the chromadb import optional so the rest of the app can still
+import this module when chromadb isn't installed. When unavailable,
+functions will return safe fallbacks and errors rather than raising
+ImportError at module import time.
+"""
+
 from typing import Dict, List, Optional
 from pathlib import Path
+
+# Optional import of chromadb
+try:
+    import chromadb
+    from chromadb.config import Settings
+    CHROMADB_AVAILABLE = True
+except Exception:
+    chromadb = None
+    Settings = None
+    CHROMADB_AVAILABLE = False
 
 
 def discover_chroma_backends() -> Dict[str, Dict[str, str]]:
     """Discover available ChromaDB backends in the project directory"""
-    backends = {}
+    backends: Dict[str, Dict[str, str]] = {}
+
+    if not CHROMADB_AVAILABLE:
+        # chromadb isn't installed; return empty set so the app can show
+        # a helpful message instead of crashing.
+        return backends
+
     current_dir = Path(".")
 
     # Look for ChromaDB directories that match specific criteria
@@ -29,8 +51,8 @@ def discover_chroma_backends() -> Dict[str, Dict[str, str]]:
                     count = "N/A"
 
                 backends[key] = {
-                    "dir": str(chroma_dir),
-                    "collection": collection.name,
+                    "directory": str(chroma_dir),
+                    "collection_name": collection.name,
                     "display_name": f"{chroma_dir.name} - {collection.name} ({count} docs)",
                     "count": str(count)
                 }
@@ -38,8 +60,8 @@ def discover_chroma_backends() -> Dict[str, Dict[str, str]]:
         except Exception as e:
             error_preview = str(e)[:50]
             backends[str(chroma_dir)] = {
-                "dir": str(chroma_dir),
-                "collection": "",
+                "directory": str(chroma_dir),
+                "collection_name": "",
                 "display_name": f"{chroma_dir.name} (Error: {error_preview}...)",
                 "count": "0"
             }
@@ -48,17 +70,30 @@ def discover_chroma_backends() -> Dict[str, Dict[str, str]]:
 
 
 def initialize_rag_system(chroma_dir: str, collection_name: str):
-    """Initialize the RAG system with specified backend (cached for performance)"""
-    client = chromadb.PersistentClient(
-        path=chroma_dir,
-        settings=Settings(anonymized_telemetry=False)
-    )
-    return client.get_collection(collection_name)
+    """Initialize the RAG system with specified backend.
+
+    Returns a tuple (collection, success, error_message).
+    """
+    if not CHROMADB_AVAILABLE:
+        return None, False, "chromadb package not installed"
+
+    try:
+        client = chromadb.PersistentClient(
+            path=chroma_dir,
+            settings=Settings(anonymized_telemetry=False)
+        )
+        collection = client.get_collection(collection_name)
+        return collection, True, ""
+    except Exception as e:
+        return None, False, str(e)
 
 
 def retrieve_documents(collection, query: str, n_results: int = 3,
                        mission_filter: Optional[str] = None) -> Optional[Dict]:
     """Retrieve relevant documents from ChromaDB with optional filtering"""
+    if collection is None:
+        return None
+
     where_filter = None
 
     if mission_filter and mission_filter.lower() not in ("all", "none", ""):

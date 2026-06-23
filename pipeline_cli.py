@@ -29,7 +29,7 @@ def main() -> None:
     """Parse command-line arguments and run the embedding pipeline."""
     parser = argparse.ArgumentParser(description='ChromaDB Embedding Pipeline for NASA Data')
     parser.add_argument('--data-path', default='.', help='Path to data directories')
-    parser.add_argument('--openai-key', required=True, help='OpenAI API key')
+    parser.add_argument('--openai-key', help='OpenAI API key (or set OPENAI_API_KEY in environment or .env)')
     parser.add_argument('--chroma-dir', default='./chroma_db_openai', help='ChromaDB persist directory')
     parser.add_argument('--collection-name', default='nasa_space_missions_text', help='Collection name')
     parser.add_argument('--embedding-model', default='text-embedding-3-small', help='OpenAI embedding model')
@@ -44,9 +44,14 @@ def main() -> None:
 
     args = parser.parse_args()
 
+    # Support providing the OpenAI key either via CLI or environment (.env supported by load_dotenv)
+    openai_key = args.openai_key or os.getenv('OPENAI_API_KEY') or os.getenv('OPENAI_KEY')
+    if not openai_key:
+        parser.error('OpenAI API key required. Provide --openai-key or set OPENAI_API_KEY in your environment or a .env file')
+
     logger.info('Initializing ChromaDB Embedding Pipeline...')
     pipeline = ChromaEmbeddingPipelineTextOnly(
-        openai_api_key=args.openai_key,
+        openai_api_key=openai_key,
         chroma_persist_directory=args.chroma_dir,
         collection_name=args.collection_name,
         embedding_model=args.embedding_model,

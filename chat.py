@@ -60,11 +60,16 @@ def format_context(documents: List[str], metadatas: List[Dict]) -> str:
     
     return rag_client.format_context(documents, metadatas)
 
-def generate_response(openai_key, user_message: str, context: str, 
+def generate_response(user_message: str, context: str, 
                      conversation_history: List[Dict], model: str = "gpt-3.5-turbo") -> str:
-    """Generate response using OpenAI with context"""
+    """Generate response using OpenAI with context
+
+    This wrapper adapts the local call site to the conversational_llm_client
+    implementation which has the signature:
+      generate_response(user_message, conversation_history, context, model)
+    """
     try:
-        return conversational_llm_client.generate_response(openai_key, user_message, context, conversation_history, model)
+        return conversational_llm_client.generate_response(user_message, conversation_history, context, model)
     except Exception as e:
         return f"Error generating response: {e}"
 
@@ -125,8 +130,12 @@ def main():
             available_backends = discover_chroma_backends()
         
         if not available_backends:
-            st.error("No ChromaDB backends found!")
-            st.info("Please run the embedding pipeline first:\n`python run_text_embedding.py`")
+            if getattr(rag_client, "CHROMADB_AVAILABLE", False):
+                st.error("No ChromaDB backends found!")
+                st.info("Please run the embedding pipeline first:\n`python run_text_embedding.py`")
+            else:
+                st.error("ChromaDB (chromadb) is not installed in this environment.")
+                st.info("Install it with: `pip install chromadb` or follow the README instructions.")
             st.stop()
         
         # Backend selection
@@ -155,7 +164,8 @@ def main():
             st.warning("Please enter your OpenAI API key")
             st.stop()
         else:
-            os.environ["CHROMA_OPENAI_API_KEY"] = openai_key
+            # Ensure downstream modules that read OPENAI_API_KEY can access it
+            os.environ["OPENAI_API_KEY"] = openai_key
         
         # Model selection
         model_choice = st.selectbox(
@@ -181,9 +191,17 @@ def main():
     # Initialize RAG system
     with st.spinner("Initializing RAG system..."):
 
+        # Backwards-compatible access: support both old and new key names
+        chroma_dir = selected_backend.get("directory") or selected_backend.get("dir")
+        collection_name = selected_backend.get("collection_name") or selected_backend.get("collection")
+
+        if not chroma_dir or not collection_name:
+            st.error("Selected backend configuration is missing required fields ('directory' and 'collection_name').")
+            st.stop()
+
         collection, success, error = initialize_rag_system(
-            selected_backend["directory"], 
-            selected_backend["collection_name"]
+            chroma_dir,
+            collection_name
         )
     
     if not success:
@@ -226,9 +244,8 @@ def main():
                 
                 # Generate response
                 response = generate_response(
-                    openai_key, 
-                    prompt, 
-                    context, 
+                    prompt,
+                    context,
                     st.session_state.messages[:-1],
                     model_choice
                 )

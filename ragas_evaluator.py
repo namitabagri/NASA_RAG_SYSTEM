@@ -1,16 +1,35 @@
-from ragas.llms import LangchainLLMWrapper
-from ragas.embeddings import LangchainEmbeddingsWrapper
 from langchain_openai import ChatOpenAI
 from langchain_openai import OpenAIEmbeddings
 from typing import Dict, List, Optional
 
-# RAGAS imports
+# RAGAS imports (optional). Wrap all ragas imports in a try/except so
+# importing this module does not raise if the `ragas` package is not
+# installed. When unavailable, set RAGAS_AVAILABLE = False and provide
+# safe None fallbacks for names used elsewhere.
 try:
+    from ragas.llms import LangchainLLMWrapper
+    from ragas.embeddings import LangchainEmbeddingsWrapper
     from ragas import SingleTurnSample
-    from ragas.metrics import BleuScore, NonLLMContextPrecisionWithReference, ResponseRelevancy, Faithfulness, RougeScore
+    from ragas.metrics import (
+        BleuScore,
+        NonLLMContextPrecisionWithReference,
+        ResponseRelevancy,
+        Faithfulness,
+        RougeScore,
+    )
     from ragas import evaluate
     RAGAS_AVAILABLE = True
-except ImportError:
+except Exception:
+    # ragas not installed or import failed; provide safe fallbacks
+    LangchainLLMWrapper = None
+    LangchainEmbeddingsWrapper = None
+    SingleTurnSample = None
+    BleuScore = None
+    NonLLMContextPrecisionWithReference = None
+    ResponseRelevancy = None
+    Faithfulness = None
+    RougeScore = None
+    evaluate = None
     RAGAS_AVAILABLE = False
 
 

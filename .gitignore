@@ -140,3 +140,16 @@ node_modules/
 docker-compose.override.yml
 
 # End of file
+# Virtual environments
+nasa.bak/
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+namita

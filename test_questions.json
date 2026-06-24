@@ -3,6 +3,7 @@
     "id": "overview-01",
     "category": "overview",
     "question": "What were the primary objectives of Apollo 11 and how did the mission advance NASA's lunar exploration goals?",
+    "expected_answer": "Apollo 11 was designed to demonstrate a crewed lunar landing, test key spacecraft systems, and return safely to Earth. The mission advanced NASA's lunar exploration goals by proving that humans could reach the Moon and perform surface operations, paving the way for later Apollo missions.",
     "expected_topics": [
       "Apollo 11 mission objectives",
       "lunar landing",
@@ -14,6 +15,7 @@
     "id": "emergency-01",
     "category": "emergency_scenarios",
     "question": "What emergency procedures did Apollo 13 astronauts and mission control follow after an oxygen tank explosion threatened the spacecraft?",
+    "expected_answer": "After an oxygen tank explosion crippled Apollo 13, the crew and mission control worked through a life-support crisis by shutting down nonessential systems and conserving power, water, and oxygen. They improvised a safe return plan using the lunar module as a lifeboat and executed a carefully timed sequence of maneuvers to bring the spacecraft home.",
     "expected_topics": [
       "Apollo 13 oxygen tank explosion",
       "mission control procedures",
@@ -25,6 +27,7 @@
     "id": "disaster-01",
     "category": "disaster_analysis",
     "question": "What caused the Challenger disaster and what were the immediate and long-term consequences for NASA's shuttle program?",
+    "expected_answer": "The Challenger disaster was caused by the failure of an O-ring seal in cold weather, which allowed hot gas to escape and destroy the shuttle shortly after launch. The accident prompted a halt to shuttle flights, a major redesign of safety procedures, and a long-term reassessment of NASA's launch decision processes.",
     "expected_topics": [
       "Challenger disaster",
       "O-ring failure",
@@ -36,6 +39,7 @@
     "id": "crew-01",
     "category": "crew",
     "question": "Who were the key crew members on the Apollo 11 mission and what roles did they play during the flight?",
+    "expected_answer": "Apollo 11's crew consisted of Neil Armstrong, Buzz Aldrin, and Michael Collins. Armstrong and Aldrin flew the lunar module to the surface while Collins remained in lunar orbit, and all three contributed to the mission's navigation, communication, and operational success.",
     "expected_topics": [
       "Apollo 11 crew",
       "commander",
@@ -47,6 +51,7 @@
     "id": "systems-01",
     "category": "technical_systems",
     "question": "How did the Apollo command module environmental control system maintain life support and cabin conditions during lunar missions?",
+    "expected_answer": "The Apollo command module environmental control system regulated cabin pressure, temperature, oxygen, and carbon dioxide removal to keep the astronauts alive and comfortable. It used circulating air, scrubbers, and water-based cooling loops to maintain a stable habitat during the mission.",
     "expected_topics": [
       "command module environmental control",
       "life support",
@@ -58,6 +63,7 @@
     "id": "timeline-01",
     "category": "mission_timeline",
     "question": "What were the major milestones in NASA's Apollo program from the first launch through the lunar landing era?",
+    "expected_answer": "The Apollo program progressed from early test flights and orbital missions to the Saturn V launches that carried astronauts toward the Moon. Major milestones included the first crewed Apollo flights, the lunar orbit missions, and the successful Apollo 11 landing that marked the peak of the program's lunar era.",
     "expected_topics": [
       "Apollo program timeline",
       "launch milestones",

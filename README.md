@@ -154,3 +154,22 @@ Statistics include:
 - Documents added/updated/skipped
 - Per-mission breakdown
 - Processing time
+
+## Evaluation
+
+The repository includes a lightweight evaluation dataset in `test_questions.json` for exercising the RAG pipeline with NASA-specific questions. The file contains six mission-relevant categories:
+
+- `overview`
+- `emergency_scenarios`
+- `disaster_analysis`
+- `crew`
+- `technical_systems`
+- `mission_timeline`
+
+Run the evaluation script with:
+
+```bash
+python evaluate.py
+```
+
+The script loads the questions from `test_questions.json`, sends each question through the retrieval pipeline, and prints the resulting response for inspection.

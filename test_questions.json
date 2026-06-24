@@ -1,0 +1,68 @@
+[
+  {
+    "id": "overview-01",
+    "category": "overview",
+    "question": "What were the primary objectives of Apollo 11 and how did the mission advance NASA's lunar exploration goals?",
+    "expected_topics": [
+      "Apollo 11 mission objectives",
+      "lunar landing",
+      "scientific exploration",
+      "NASA lunar program"
+    ]
+  },
+  {
+    "id": "emergency-01",
+    "category": "emergency_scenarios",
+    "question": "What emergency procedures did Apollo 13 astronauts and mission control follow after an oxygen tank explosion threatened the spacecraft?",
+    "expected_topics": [
+      "Apollo 13 oxygen tank explosion",
+      "mission control procedures",
+      "life support contingency",
+      "safe return tactics"
+    ]
+  },
+  {
+    "id": "disaster-01",
+    "category": "disaster_analysis",
+    "question": "What caused the Challenger disaster and what were the immediate and long-term consequences for NASA's shuttle program?",
+    "expected_topics": [
+      "Challenger disaster",
+      "O-ring failure",
+      "launch decision factors",
+      "post-accident investigation"
+    ]
+  },
+  {
+    "id": "crew-01",
+    "category": "crew",
+    "question": "Who were the key crew members on the Apollo 11 mission and what roles did they play during the flight?",
+    "expected_topics": [
+      "Apollo 11 crew",
+      "commander",
+      "pilot",
+      "mission specialist roles"
+    ]
+  },
+  {
+    "id": "systems-01",
+    "category": "technical_systems",
+    "question": "How did the Apollo command module environmental control system maintain life support and cabin conditions during lunar missions?",
+    "expected_topics": [
+      "command module environmental control",
+      "life support",
+      "cabin atmosphere",
+      "spacecraft subsystem"
+    ]
+  },
+  {
+    "id": "timeline-01",
+    "category": "mission_timeline",
+    "question": "What were the major milestones in NASA's Apollo program from the first launch through the lunar landing era?",
+    "expected_topics": [
+      "Apollo program timeline",
+      "launch milestones",
+      "moon landing",
+      "program chronology"
+    ]
+  }
+]

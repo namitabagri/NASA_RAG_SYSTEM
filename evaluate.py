@@ -5,6 +5,7 @@ from difflib import SequenceMatcher
 from pathlib import Path
 from statistics import mean
 from typing import Any, Dict, List
+from dotenv import load_dotenv
 
 from rag_client import initialize_rag_system, retrieve_documents, format_context
 
@@ -12,6 +13,10 @@ from rag_client import initialize_rag_system, retrieve_documents, format_context
 DATASET_PATH = Path(__file__).resolve().parent / "test_questions.json"
 CHROMA_DIR = os.getenv("CHROMA_DIR", "./chroma_db")
 COLLECTION_NAME = os.getenv("COLLECTION_NAME", "nasa_space_missions_text")
+# Load environment variables from a .env file (if present) so
+# os.getenv can pick up values when scripts are run directly.
+load_dotenv()
+
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 MODEL_NAME = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo")
 STOPWORDS = {

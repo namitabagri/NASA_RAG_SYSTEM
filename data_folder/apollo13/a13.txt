@@ -1,0 +1,101 @@
+# Apollo 13: The Successful Failure
+
+## Background
+
+Following the triumphant success of Apollo 11 in 1969 and Apollo 12 later that same year, NASA was growing increasingly confident in its lunar missions. Apollo 13 was planned as the third Moon landing, targeting the Fra Mauro highlands — a geologically rich region that scientists were eager to explore.
+
+However, Apollo 13 would never land on the Moon. Instead, it would become the most dramatic rescue mission in the history of space exploration.
+
+---
+
+## The Crew
+
+Apollo 13 had three astronauts:
+
+- **Jim Lovell** — Commander. A veteran astronaut who had previously flown on Gemini 7, Gemini 12, and Apollo 8. One of NASA's most experienced spacemen.
+- **Jack Swigert** — Command Module Pilot. Added to the crew just 72 hours before launch after the original pilot was exposed to German measles.
+- **Fred Haise** — Lunar Module Pilot. On his first spaceflight, eager to walk on the Moon.
+
+---
+
+## Launch
+
+On **April 11, 1970**, at 2:13 PM, Apollo 13 lifted off from Kennedy Space Center aboard the Saturn V rocket. The launch appeared routine and smooth. In fact, the mission was so seemingly uneventful in its early stages that the press had largely lost interest — the Moon had already been conquered, and a third mission felt almost ordinary to the public.
+
+One of the mission controllers famously noted before the disaster:
+
+> *"This is going to be the most uneventful flight of the whole program."*
+
+He could not have been more wrong.
+
+---
+
+## The Journey and the Crisis
+
+On **April 13, 1970** — two days into the mission — Apollo 13 was approximately 320,000 kilometers from Earth. The crew had just finished a television broadcast, showing the public how comfortably they lived and worked in space. The broadcast received little attention from the major networks, who had decided not to air it.
+
+Then, at **9:08 PM**, a routine stir of the oxygen tanks was commanded from Houston. Seconds later, a loud bang echoed through the spacecraft.
+
+Swigert radioed Mission Control with words that became iconic:
+
+> *"Houston, we've had a problem."*
+
+An oxygen tank in the service module had exploded. Within minutes, a second oxygen tank was also failing. The command module was rapidly losing power, oxygen, and water — the three things the crew needed to survive.
+
+The Moon landing was immediately abandoned. The mission was now one thing only: **get the crew home alive.**
+
+---
+
+## Survival in the Lifeboat
+
+With the command module dying, the crew powered it down and moved into the **lunar module Aquarius**, using it as a lifeboat — something it was never designed to do. The lunar module was built to support two people for two days. Now it had to support three people for four days.
+
+The challenges were immense:
+
+- **Power** had to be rationed to the absolute minimum. Temperatures inside the spacecraft dropped to near freezing. The crew huddled together for warmth, unable to sleep properly.
+- **Water** was critically short. Each astronaut was limited to just 180ml per day — less than a single glass.
+- **Carbon dioxide** levels began rising dangerously. The lunar module's CO₂ filters were becoming saturated, and the square filters from the command module did not fit the lunar module's round filter sockets. Engineers on the ground had to improvise a solution using only materials available on the spacecraft — plastic bags, cardboard, duct tape, and socks. The makeshift adapter worked, and the crew's lives were saved.
+
+Meanwhile, back on Earth, teams of engineers worked around the clock, running simulations and calculating the precise course corrections needed to bring the crew home safely.
+
+---
+
+## The Journey Home
+
+To return to Earth, the crew used the lunar module's engine to make several critical burns — adjustments to their trajectory. Each burn had to be precisely calculated and manually executed, as many of the ship's navigation systems were powered down to conserve energy.
+
+The crew endured four days of freezing temperatures, severe dehydration, and exhaustion. Fred Haise developed a serious kidney infection from the lack of water. The astronauts barely slept.
+
+As they approached Earth, the crew powered the command module back up — a procedure that had never been done before in space under these conditions. Engineers had to write new power-up procedures from scratch and relay them to the crew verbally, step by step.
+
+On **April 17, 1970**, after four days of surviving in a crippled spacecraft, the crew jettisoned the lunar module Aquarius — their faithful lifeboat — with Lovell saying a quiet farewell to the vessel that had saved their lives.
+
+Minutes later, Apollo 13 re-entered Earth's atmosphere and splashed down safely in the Pacific Ocean, just 6.5 kilometers from the recovery ship USS Iwo Jima.
+
+The world, which had been holding its breath for four days, erupted in relief and celebration.
+
+---
+
+## What Went Wrong
+
+The investigation that followed revealed the cause of the explosion. During ground testing months before launch, an oxygen tank had been damaged. A thermostat switch inside the tank had been inadvertently welded shut due to incorrect voltage being applied during testing — a small, overlooked error that nearly cost three men their lives.
+
+When the tank was stirred during the mission, the exposed wiring inside sparked, igniting the oxygen, and causing the explosion.
+
+---
+
+## Legacy
+
+Apollo 13 never landed on the Moon, yet it is arguably NASA's finest hour. It demonstrated extraordinary problem-solving, teamwork, and composure under the most extreme pressure imaginable.
+
+NASA administrator Edgar Cortright called it a **"successful failure"** — a mission that failed its objective but succeeded in the most important way possible: bringing its crew home alive.
+
+Its legacy endures in many ways:
+
+- It led to major **redesigns of the oxygen tanks** and service module systems in subsequent Apollo missions
+- It proved that **human ingenuity and teamwork** could overcome even the most catastrophic failures
+- It remains a defining case study in **crisis management and engineering problem-solving**
+- The story was immortalized in the acclaimed **1995 film Apollo 13**, directed by Ron Howard and starring Tom Hanks as Jim Lovell
+- Jim Lovell's story of survival and leadership continues to inspire people around the world
+
+Apollo 13 is a reminder that sometimes the greatest achievements are not the ones that go according to plan — but the ones that survive when everything goes wrong.

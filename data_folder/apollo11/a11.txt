@@ -1,0 +1,94 @@
+# Apollo 11: Humanity's Giant Leap
+
+## Background
+
+By the late 1950s, the United States and the Soviet Union were locked in a fierce Space Race. The Soviets had taken early leads — launching the first satellite (Sputnik, 1957) and sending the first human to space (Yuri Gagarin, 1961). In response, President John F. Kennedy made a bold declaration before Congress in May 1961:
+
+> *"We choose to go to the Moon in this decade and do the other things, not because they are easy, but because they are hard."*
+
+This set the United States on a mission that would consume nearly a decade of work, $25 billion, and the efforts of over 400,000 engineers, scientists, and technicians.
+
+---
+
+## The Crew
+
+The Apollo 11 mission had three astronauts:
+
+- **Neil Armstrong** — Commander. A former Navy pilot and test pilot, calm under pressure and chosen to be the first to step on the Moon.
+- **Buzz Aldrin** — Lunar Module Pilot. A highly skilled astronaut with a doctorate in orbital mechanics from MIT.
+- **Michael Collins** — Command Module Pilot. Responsible for piloting the command module alone in lunar orbit while his crewmates descended to the surface.
+
+---
+
+## Launch
+
+On **July 16, 1969**, at 9:32 AM, Apollo 11 lifted off from Kennedy Space Center in Florida atop the massive Saturn V rocket — still the most powerful rocket ever successfully launched. Nearly a million spectators gathered along the Florida coast to witness the moment, with hundreds of millions more watching on television worldwide.
+
+The Saturn V stood 111 meters tall and generated 7.6 million pounds of thrust at liftoff. It was an engineering marvel that had to work perfectly — there was no room for error.
+
+---
+
+## The Journey to the Moon
+
+After launch, it took **three days** to travel the 384,000 kilometers to the Moon. During the journey, the crew performed system checks, made television broadcasts, and prepared for the most critical phase of the mission.
+
+On July 19, Apollo 11 entered lunar orbit. The next day would change history forever.
+
+---
+
+## Landing on the Moon
+
+On **July 20, 1969**, Armstrong and Aldrin climbed into the lunar module, nicknamed **Eagle**, and separated from the command module. Collins remained in orbit, alone, in the command module nicknamed **Columbia**.
+
+As Eagle descended toward the surface, alarms began going off in the cabin — the onboard computer was being overloaded with data. Flight controllers in Houston made a quick decision: the alarms were non-critical, and the descent should continue.
+
+With fuel running dangerously low, Armstrong took semi-manual control and guided Eagle over a rocky crater to find a safer landing spot. With only **25 seconds of fuel remaining**, the lunar module touched down in the Sea of Tranquility.
+
+Armstrong's words to Mission Control were simple and iconic:
+
+> *"Houston, Tranquility Base here. The Eagle has landed."*
+
+The response from Houston captured the tension of the moment: *"Roger, Tranquility. We copy you on the ground. You've got a bunch of guys about to turn blue. We're breathing again."*
+
+---
+
+## Walking on the Moon
+
+At **10:56 PM EDT**, Neil Armstrong descended the ladder of the lunar module and set foot on the Moon, speaking his famous words:
+
+> *"That's one small step for man, one giant leap for mankind."*
+
+Buzz Aldrin followed about 20 minutes later, describing the landscape as *"magnificent desolation."*
+
+During their **2 hours and 31 minutes** on the surface, Armstrong and Aldrin:
+
+- Planted the **American flag**
+- Collected **21.5 kg of lunar rock and soil** samples
+- Set up scientific instruments including a seismometer and laser reflector
+- Spoke briefly with **President Richard Nixon** via telephone
+- Took hundreds of photographs
+
+Meanwhile, Michael Collins orbited 110 km above, completely out of radio contact for 48 minutes during each orbit — the loneliest human being in existence at that moment.
+
+---
+
+## Return to Earth
+
+After 21 hours and 36 minutes on the lunar surface, Eagle's ascent stage lifted off and docked with Columbia in orbit. The three astronauts then began the three-day journey back to Earth.
+
+On **July 24, 1969**, Apollo 11 splashed down in the Pacific Ocean, just 24 km from the recovery ship USS Hornet. The crew was retrieved by helicopter and placed in a **quarantine module** for 21 days as a precaution against any potential lunar microbes — a precaution later deemed unnecessary.
+
+---
+
+## Legacy
+
+Apollo 11 was more than a technological achievement — it was a turning point in human history. It demonstrated what humanity could accomplish when driven by vision and determination.
+
+Its legacy lives on in many ways:
+
+- The **lunar samples** collected continue to be studied by scientists today
+- The **laser reflectors** left on the surface are still used to measure the Moon's distance from Earth
+- It inspired generations of scientists, engineers, and explorers
+- It remains one of the most watched and celebrated events in human history
+
+Over 50 years later, Apollo 11 endures as a symbol of human curiosity, courage, and the relentless desire to explore the unknown.
